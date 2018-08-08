@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const DIST_DIR = path.resolve('dist');
 const CLIENT_DIR = path.resolve('src');
@@ -33,4 +34,10 @@ module.exports = {
       '.jsx',
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve('index.html'),
+      inject: true,
+    })
+  ],
 }
