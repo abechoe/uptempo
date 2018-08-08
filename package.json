@@ -5,5 +5,9 @@
   "license": "MIT",
   "devDependencies": {
     "webpack": "^4.16.5"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }
