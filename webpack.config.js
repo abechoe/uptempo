@@ -6,6 +6,7 @@ const CLIENT_DIR = path.resolve('src');
 
 module.exports = {
   context: path.join(CLIENT_DIR, 'entries'),
+  mode: 'development',
   entry: {
     main: './main.jsx',
   },
@@ -40,4 +41,10 @@ module.exports = {
       inject: true,
     })
   ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    publicPath: 'http://localhost:9000/dist',
+    port: 9000,
+    hotOnly: true,
+  },
 }
