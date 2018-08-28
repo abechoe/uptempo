@@ -1,5 +1,5 @@
-import HelloWorld from 'components/HelloWorld';
+import EventForm from 'components/EventForm';
 import React from 'react';
 import { render } from 'react-dom';
 
-render(<HelloWorld/>, document.getElementById('hello-world'));
+render(<EventForm />, document.getElementById('root'));
