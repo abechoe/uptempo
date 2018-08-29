@@ -1,8 +1,9 @@
-import Radium, { Style } from 'radium';
+import Radium from 'radium';
 import React from 'react';
 import Input from './Input';
 import Checkbox from './Checkbox';
 import Button from './Button';
+import colors from 'modules/colors';
 
 class EventForm extends React.Component {
   constructor(props) {
@@ -58,8 +59,8 @@ const styles = {
     width: '800px',
     margin: '0 auto',
     font: '12px Helvetica, sans-serif',
-    background: '#2f723e',
-    color: '#fff',
+    background: colors.BACKGROUND_GREEN,
+    color: colors.WHITE,
     borderRadius: '5px',
   },
 

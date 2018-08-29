@@ -1,5 +1,6 @@
 import Radium from 'radium';
 import React from 'react';
+import colors from 'modules/colors';
 
 class Button extends React.Component {
   constructor(props) {
@@ -24,8 +25,8 @@ const styles = {
     width: '60px',
     borderRadius: '5px',
     ':hover': {
-      border: '1px solid #19d642',
-      background: '#29a043',
+      border: `1px solid ${colors.BUTTON_HOVER_BORDER_GREEN}`,
+      background: colors.BUTTON_HOVER_GREEN,
       color: '#fff',
     },
   },
