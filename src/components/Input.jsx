@@ -1,7 +1,7 @@
 import Radium from 'radium';
 import React from 'react';
 
-class TextInput extends React.Component {
+class Input extends React.Component {
   constructor(props) {
     super(props);
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -15,7 +15,7 @@ class TextInput extends React.Component {
     return (
       <div>
         <label htmlFor={this.props.id}>{this.props.title}:</label>
-        <input type="text"
+        <input type={this.props.type}
           id={this.props.id}
           name={this.props.name}
           value={this.props.value}
@@ -30,11 +30,11 @@ class TextInput extends React.Component {
 const styles = {
   base: {
     display: 'block',
-    margin: '2px 0 0 0',
+    margin: '2px 0 10px 0',
     borderRadius: '5px',
     padding: '1px',
     height: '20px',
   }
 }
 
-export default Radium(TextInput);
+export default Radium(Input);
