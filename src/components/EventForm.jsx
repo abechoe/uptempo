@@ -25,15 +25,15 @@ class EventForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    fetch('http://localhost:3000/events', {
+    fetch(`${process.env.REACT_APP_API_URL}/events`, {
       method: 'POST',
       body: JSON.stringify(this.state),
       headers: {
         'Content-Type': 'application/json',
       },
-    }).then(function(response) {
+    }).then((response) => {
       return response.json();
-    }).then(function(myJson) {
+    }).then((myJson) => {
       console.log(JSON.stringify(myJson));
     });
   }
