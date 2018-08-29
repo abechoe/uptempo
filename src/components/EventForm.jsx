@@ -1,6 +1,7 @@
+import Radium, { Style } from 'radium';
 import React from 'react';
 
-export default class extends React.Component {
+export default class EventForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41,28 +42,82 @@ export default class extends React.Component {
 
   render() {
     return (
-      <form method="post" onSubmit={this.handleSubmit}>
-        <fieldset>
+      <form method="post" onSubmit={this.handleSubmit} style={[styles.base]}>
+        <fieldset style={[styles.fieldset]}>
           <h1>Create an Event</h1>
-          <label>
-            Name:
-            <input name="name" type="text" value={this.state.name} onChange={this.handleInputChange} />
-          </label>
-          <label>
-            Start Time:
-            <input name="event_start" type="datetime-local" onChange={this.handleInputChange} />
-          </label>
-          <label>
-            End Time:
-            <input name="event_end" type="datetime-local" onChange={this.handleInputChange} />
-          </label>
-          <label>
-            Recurs
-            <input name="recurs" type="checkbox" onChange={this.handleInputChange} />
-          </label>
-          <input type="submit" value="Submit" />
+          <dl>
+            <dt style={[styles.dt]}>
+              <label htmlFor="name">Name:</label>
+            </dt>
+            <dd style={[styles.dd]}>
+              <input id="name" name="name" type="text" value={this.state.name} onChange={this.handleInputChange} style={[styles.input]} />
+            </dd>
+            <dt style={[styles.dt]}>
+              <label htmlFor="event_start">Start Time:</label>
+            </dt>
+            <dd style={[styles.dd]}>
+              <input id="event_start" name="event_start" type="datetime-local" onChange={this.handleInputChange} style={[styles.input]} />
+            </dd>
+            <dt style={[styles.dt]}>
+              <label htmlFor="event_end">End Time:</label>
+            </dt>
+            <dd style={[styles.dd]}>
+              <input id="event_end" name="event_end" type="datetime-local" onChange={this.handleInputChange} style={styles.input} />
+            </dd>
+            <dt style={[styles.dt]}>
+              <label htmlFor="recurs">Recurs</label>
+            </dt>
+            <dd style={[styles.dd]}>
+              <input id="recurs" name="recurs" type="checkbox" onChange={this.handleInputChange} />
+            </dd>
+          </dl>
+          <button type="submit" style={[styles.button]}>Submit</button>
         </fieldset>
       </form>
     );
   }
 }
+
+EventForm = Radium(EventForm);
+
+const styles = {
+  base: {
+    width: '800px',
+    margin: '0 auto',
+    font: '12px Helvetica, sans-serif',
+    background: '#2f723e',
+    color: '#fff',
+    borderRadius: '5px',
+  },
+
+  fieldset: {
+    border: 'none',
+  },
+
+  dt: {
+    padding: '0 0 2px 0',
+  },
+
+  dd: {
+    display: 'inline-block',
+    margin: '0 0 10px 0',
+  },
+
+  input: {
+    margin: '0',
+    borderRadius: '5px',
+    padding: '1px',
+    height: '20px',
+  },
+
+  button: {
+    height: '30px',
+    width: '60px',
+    borderRadius: '5px',
+    ':hover': {
+      border: '1px solid #19d642',
+      background: '#29a043',
+      color: '#fff',
+    },
+  },
+};
