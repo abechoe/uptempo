@@ -3,14 +3,14 @@ import { shallow, mount } from 'enzyme';
 
 import EventForm from '../components/EventForm';
 
-describe('EventForm component tests', function() {
-  it('renders an EventForm component', function() {
+describe('EventForm component tests', () => {
+  it('renders an EventForm component', () => {
     const wrapper = shallow(<EventForm />);
     expect(wrapper).toMatchSnapshot();
   });
 });
 
-describe('EventForm submit tests', function() {
+describe('EventForm submit tests', () => {
   let mockEvent;
   let mockInputValues;
   let mockCreatedEvent;
@@ -41,7 +41,7 @@ describe('EventForm submit tests', function() {
     }));
   });
 
-  it('calls fetch with the supplied input values', function() {
+  it('calls fetch with the supplied input values', () => {
     const wrapper = shallow(<EventForm />);
     const expectedFetchBody = {
       method: 'POST',
