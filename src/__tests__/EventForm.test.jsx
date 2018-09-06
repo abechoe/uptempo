@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 
-import EventForm from '../components/EventForm';
+import EventForm from 'components/EventForm';
 
 describe('EventForm component tests', () => {
   it('renders an EventForm component', () => {
