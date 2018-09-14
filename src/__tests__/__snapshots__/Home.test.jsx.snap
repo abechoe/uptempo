@@ -34,7 +34,7 @@ ShallowWrapper {
               "textDecoration": "none",
             }
           }
-          to="/create"
+          to="/new"
         >
           Create an Event
         </Link>
@@ -60,7 +60,7 @@ ShallowWrapper {
               "textDecoration": "none",
             }
           }
-          to="/create"
+          to="/new"
         >
           Create an Event
         </Link>,
@@ -83,7 +83,7 @@ ShallowWrapper {
             },
             "textDecoration": "none",
           },
-          "to": "/create",
+          "to": "/new",
         },
         "ref": null,
         "rendered": "Create an Event",
@@ -117,7 +117,7 @@ ShallowWrapper {
                 "textDecoration": "none",
               }
             }
-            to="/create"
+            to="/new"
           >
             Create an Event
           </Link>
@@ -143,7 +143,7 @@ ShallowWrapper {
                 "textDecoration": "none",
               }
             }
-            to="/create"
+            to="/new"
           >
             Create an Event
           </Link>,
@@ -166,7 +166,7 @@ ShallowWrapper {
               },
               "textDecoration": "none",
             },
-            "to": "/create",
+            "to": "/new",
           },
           "ref": null,
           "rendered": "Create an Event",

@@ -9,7 +9,7 @@ class Home extends React.Component {
     return (
       <ul style={styles.base}>
         <li style={styles.li}>
-          <StyledLink to="/create" style={styles.a}>Create an Event</StyledLink>
+          <StyledLink to="/new" style={styles.a}>Create an Event</StyledLink>
         </li>
       </ul>
     );

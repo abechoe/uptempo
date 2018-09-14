@@ -11,7 +11,7 @@ class App extends React.Component {
       <Router>
         <div>
           <Route exact path="/" component={Home} />
-          <Route path="/create" component={EventForm} />
+          <Route path="/new" component={EventForm} />
         </div>
       </Router>
     );
