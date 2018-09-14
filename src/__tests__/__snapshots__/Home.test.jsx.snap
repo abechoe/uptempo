@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component tests renders the Home component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <li
+        data-radium={true}
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <Link
+          replace={false}
+          style={
+            Object {
+              ":hover": Object {
+                "textDecoration": "underline",
+              },
+              "textDecoration": "none",
+            }
+          }
+          to="/create"
+        >
+          Create an Event
+        </Link>
+      </li>,
+      "data-radium": true,
+      "style": Object {
+        "font": "20px Helvetica, sans-serif",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Link
+          replace={false}
+          style={
+            Object {
+              ":hover": Object {
+                "textDecoration": "underline",
+              },
+              "textDecoration": "none",
+            }
+          }
+          to="/create"
+        >
+          Create an Event
+        </Link>,
+        "data-radium": true,
+        "style": Object {
+          "listStyle": "none",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Create an Event",
+          "replace": false,
+          "style": Object {
+            ":hover": Object {
+              "textDecoration": "underline",
+            },
+            "textDecoration": "none",
+          },
+          "to": "/create",
+        },
+        "ref": null,
+        "rendered": "Create an Event",
+        "type": [Function],
+      },
+      "type": "li",
+    },
+    "type": "ul",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <li
+          data-radium={true}
+          style={
+            Object {
+              "listStyle": "none",
+            }
+          }
+        >
+          <Link
+            replace={false}
+            style={
+              Object {
+                ":hover": Object {
+                  "textDecoration": "underline",
+                },
+                "textDecoration": "none",
+              }
+            }
+            to="/create"
+          >
+            Create an Event
+          </Link>
+        </li>,
+        "data-radium": true,
+        "style": Object {
+          "font": "20px Helvetica, sans-serif",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            style={
+              Object {
+                ":hover": Object {
+                  "textDecoration": "underline",
+                },
+                "textDecoration": "none",
+              }
+            }
+            to="/create"
+          >
+            Create an Event
+          </Link>,
+          "data-radium": true,
+          "style": Object {
+            "listStyle": "none",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Create an Event",
+            "replace": false,
+            "style": Object {
+              ":hover": Object {
+                "textDecoration": "underline",
+              },
+              "textDecoration": "none",
+            },
+            "to": "/create",
+          },
+          "ref": null,
+          "rendered": "Create an Event",
+          "type": [Function],
+        },
+        "type": "li",
+      },
+      "type": "ul",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
