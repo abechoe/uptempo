@@ -1,15 +1,15 @@
 import Radium from 'radium';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-let Link = require('react-router-dom').Link;
-Link = Radium(Link);
+const StyledLink = Radium(Link);
 
 class Home extends React.Component {
   render() {
     return (
       <ul style={styles.base}>
         <li style={styles.li}>
-          <Link to="/create" style={styles.a}>Create an Event</Link>
+          <StyledLink to="/create" style={styles.a}>Create an Event</StyledLink>
         </li>
       </ul>
     );
@@ -29,8 +29,8 @@ const styles = {
     textDecoration: 'none',
     ':hover': {
       textDecoration: 'underline',
-    }
-  }
+    },
+  },
 }
 
 export default Radium(Home);
