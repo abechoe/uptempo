@@ -1,10 +1,21 @@
+import Radium from 'radium';
 import React from 'react';
-import EventForm from 'components/EventForm'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import colors from 'modules/colors';
+import EventForm from 'components/EventForm';
+import Home from 'components/Home';
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
-      <EventForm />
+      <Router>
+        <div>
+          <Route exact path="/" component={Home} />
+          <Route path="/create" component={EventForm} />
+        </div>
+      </Router>
     );
   }
 }
+
+export default Radium(App);
