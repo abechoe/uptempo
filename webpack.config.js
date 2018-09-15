@@ -23,6 +23,7 @@ module.exports = () => {
     output: {
       path: DIST_DIR,
       filename: '[name].js',
+      publicPath: '/',
     },
     module: {
       rules: [
@@ -57,6 +58,7 @@ module.exports = () => {
       publicPath: '/dist/',
       port: 9000,
       hotOnly: true,
+      historyApiFallback: true,
     },
   };
 };
