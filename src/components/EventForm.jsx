@@ -13,6 +13,11 @@ class EventForm extends React.Component {
       event_start: '',
       event_end: '',
       recurs: false,
+      event_interval_join_attributes: {
+        interval_attributes: {
+          seconds: '',
+        },
+      },
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -47,6 +52,7 @@ class EventForm extends React.Component {
           <Input type="datetime-local" id="event_start" name="event_start" title="Start Time" onChange={this.updateField} />
           <Input type="datetime-local" id="event_end" name="event_end" title="End Time" onChange={this.updateField} />
           <Checkbox id="recurs" name="recurs" title="Recurs" onChange={this.updateField} />
+          <Input type="number" id="interval" name="event_interval_join_attributes" title="Interval (seconds)" value={this.state.event_interval_join_attributes.interval_attributes.seconds} onChange={this.updateField} />
           <Button type="submit" title="Submit" />
         </fieldset>
       </form>

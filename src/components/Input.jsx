@@ -8,7 +8,16 @@ class Input extends React.Component {
   }
 
   handleInputChange(event) {
-    this.props.onChange({[this.props.name]: event.target.value});
+    if (this.props.name === 'event_interval_join_attributes') {
+      const interval_attrs = {
+        interval_attributes: {
+          seconds: event.target.value,
+        }
+      }
+      this.props.onChange({[this.props.name]: interval_attrs});
+    } else {
+      this.props.onChange({[this.props.name]: event.target.value});
+    }
   }
 
   render() {

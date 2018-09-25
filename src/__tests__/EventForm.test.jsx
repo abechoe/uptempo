@@ -22,6 +22,11 @@ describe('EventForm submit tests', () => {
       event_start: '2018-09-06T02:00',
       event_end: '2018-09-06T03:00',
       recurs: true,
+      event_interval_join_attributes: {
+        interval_attributes: {
+          seconds: '30',
+        },
+      },
       _radiumStyleState: {},
     };
 
