@@ -55,6 +55,14 @@ ShallowWrapper {
           onChange={[Function]}
           title="Recurs"
         />
+        <Input
+          id="interval"
+          name="event_interval_join_attributes"
+          onChange={[Function]}
+          title="Interval (seconds)"
+          type="number"
+          value=""
+        />
         <Button
           title="Submit"
           type="submit"
@@ -109,6 +117,14 @@ ShallowWrapper {
             name="recurs"
             onChange={[Function]}
             title="Recurs"
+          />,
+          <Input
+            id="interval"
+            name="event_interval_join_attributes"
+            onChange={[Function]}
+            title="Interval (seconds)"
+            type="number"
+            value=""
           />,
           <Button
             title="Submit"
@@ -198,6 +214,22 @@ ShallowWrapper {
           "key": ".5",
           "nodeType": "class",
           "props": Object {
+            "id": "interval",
+            "name": "event_interval_join_attributes",
+            "onChange": [Function],
+            "title": "Interval (seconds)",
+            "type": "number",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": ".6",
+          "nodeType": "class",
+          "props": Object {
             "title": "Submit",
             "type": "submit",
           },
@@ -255,6 +287,14 @@ ShallowWrapper {
             onChange={[Function]}
             title="Recurs"
           />
+          <Input
+            id="interval"
+            name="event_interval_join_attributes"
+            onChange={[Function]}
+            title="Interval (seconds)"
+            type="number"
+            value=""
+          />
           <Button
             title="Submit"
             type="submit"
@@ -309,6 +349,14 @@ ShallowWrapper {
               name="recurs"
               onChange={[Function]}
               title="Recurs"
+            />,
+            <Input
+              id="interval"
+              name="event_interval_join_attributes"
+              onChange={[Function]}
+              title="Interval (seconds)"
+              type="number"
+              value=""
             />,
             <Button
               title="Submit"
@@ -396,6 +444,22 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": ".5",
+            "nodeType": "class",
+            "props": Object {
+              "id": "interval",
+              "name": "event_interval_join_attributes",
+              "onChange": [Function],
+              "title": "Interval (seconds)",
+              "type": "number",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": ".6",
             "nodeType": "class",
             "props": Object {
               "title": "Submit",
